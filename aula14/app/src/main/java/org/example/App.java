@@ -62,6 +62,12 @@ public class App {
 
         //filiação, disciplinas cursando
          Aluno a = new Aluno("Ana", 12345678, "José", "Maria José");
+
+         a.adicionarDisciplinas("POO");
+         a.adicionarDisciplinas("FE1");
+         a.adicionarTelefone("TELEFONEREAL1");
+         a.adicionarTelefone("TELEFONEREAL2");
+         System.out.println(a);
          
     }
 }

@@ -51,6 +51,13 @@ public class Aluno {
         return this.disciplinas.add(d);
         
     }
+    public boolean adicionarTelefone(String d){
+        return this.telefone.add(d);
+        
+    }
+    
+
+    
 
     @Override
     public String toString() {
