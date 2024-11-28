@@ -55,7 +55,7 @@ public class App {
         fila.add("Ana");
         fila.add("Juca");
 
-        String n = fila.poll();//retorna null se fila vazia
+        // String n = fila.poll();//retorna null se fila vazia
 
 
         //o aluno deve ter um nome, pode ter 1 matricula, aluno pode ter N telefones
@@ -65,8 +65,8 @@ public class App {
 
          a.adicionarDisciplinas("POO");
          a.adicionarDisciplinas("FE1");
-         a.adicionarTelefone("TELEFONEREAL1");
-         a.adicionarTelefone("TELEFONEREAL2");
+         a.adicionarTelefone("123");
+         a.adicionarTelefone("456");
          System.out.println(a);
          
     }

@@ -61,8 +61,23 @@ public class Aluno {
 
     @Override
     public String toString() {
-        return "Aluno [nome=" + nome + ", matricula=" + matricula + ", telefone=" + telefone + ", nomeDoPai=" + nomeDoPai + ", nomeDaMae=" + nomeDaMae
-                + ", disciplinas=" + disciplinas + "]";
-    }
+        StringBuilder sb = new StringBuilder();
 
+        sb.append("Matricula: " + matricula);
+        sb.append("\nNome:      " + nome);
+        sb.append("\nFiliação:  " );
+        sb.append("\n      pai: "+ nomeDoPai);
+        sb.append("\n      mãe: "+ nomeDaMae);
+        sb.append("\nTelefones: ");
+        for (String element : telefone) {
+            sb.append("\n\t-"+ element);
+        };
+        sb.append("\nDisciplinas: ");
+        for (String string : disciplinas) {
+            sb.append("\n\t-"+ string);
+        }
+        String stringFinal = sb.toString();
+        return stringFinal;
+    }
+    
 }
